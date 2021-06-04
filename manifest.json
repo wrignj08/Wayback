@@ -1,0 +1,12 @@
+{
+"name": "Wayback",
+"description": "Go to the Internet Archive version of this site",
+"version": "1.0",
+"manifest_version": 2 ,
+"browser_action": {},
+"background" : {
+  "scripts" : ["background.js"]
+},
+"permissions": ["activeTab"],
+"icons": {"128": "icon128.png" }
+}
