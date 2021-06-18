@@ -1,18 +1,20 @@
 {
-    "name": "Wayback",
-    "description": "Go to the Internet Archive version of this site",
-    "version": "1.1",
-    "manifest_version": 3,
-    "icons": {
-        "128": "icon128.png",
-        "48": "icon48.png",
-        "16": "icon16.png"
-    },
-    "background": {
-  "service_worker": "background-worker.js"
-},
-"action": {
+  "name": "Wayback",
+  "description": "Go to the Internet Archive version of this site",
+  "version": "1.1",
+  "manifest_version": 3,
+  "permissions": [
+    "activeTab"
+  ],
+  "action": {
     "default_title": "Check the archive"
   },
-    "permissions": ["activeTab","scripting"]
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
 }
